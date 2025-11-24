@@ -33,3 +33,10 @@ body {
     width: 40px; /* icon size inside circle */
     height: 40px;
   }
+
+@media (max-width: 991px) {
+  .feature-icon-circle {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
