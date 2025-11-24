@@ -34,6 +34,19 @@ body {
     height: 40px;
   }
 
+  .boost {
+    background-image: url("images/bg-boost-desktop.svg"); 
+    background-repeat: no-repeat;
+    background-size: cover;            
+    background-position: center;
+    background-color: hsl(257, 27%, 26%); 
+  }
+
+  .footer {
+    background-color: hsl(260, 8%, 14%);
+  }
+
+  /* MEDIA QUERIES FOR MOBILE */
 @media (max-width: 991px) {
   .feature-icon-circle {
     left: 50%;
