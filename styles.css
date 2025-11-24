@@ -46,6 +46,10 @@ body {
     background-color: hsl(260, 8%, 14%);
   }
 
+  .footer-logo {
+    filter: brightness(0) invert(1);
+  }
+
   /* MEDIA QUERIES FOR MOBILE */
 @media (max-width: 991px) {
   .feature-icon-circle {
