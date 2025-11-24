@@ -2,6 +2,25 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
+.sign-in-btn, .get-started-btn {
+    width: 160px;
+    height: 44px;
+    border-radius: 22px;
+    border: none;
+    background: hsl(180, 66%, 49%);
+    color: hsl(0, 100%, 100%);
+}
+
+.sign-in-btn:hover,
+.get-started-btn:hover {
+  background-color: hsl(180, 66%, 80%); /* slightly lighter */
+  cursor: pointer;
+}
+
+.login-btn {
+    color: hsl(0, 0%, 85%);
+}
+
 .features {
     background-color: hsl(0, 2%, 90%);
 }
