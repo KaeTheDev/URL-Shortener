@@ -21,6 +21,42 @@ body {
     color: hsl(0, 0%, 85%);
 }
 
+/* Shortener input section */
+.shortener-box {
+    background-image: url("images/bg-shorten-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: hsl(257, 27%, 26%);
+    padding: 2rem 1.5rem;
+    border-radius: 10px;
+    max-width: 1110px;
+    margin: 0 auto;
+  }
+  
+  /* Shortener button */
+  .shortener-btn {
+    width: 100%;             
+    max-width: none;        
+    min-width: 0;
+    height: 44px;
+    border: none;
+    background: hsl(180, 66%, 49%);
+    color: hsl(0, 100%, 100%);
+    transition: background-color 0.3s ease;
+  }
+  
+  .shortener-btn:hover {
+    background-color: hsl(180, 66%, 80%);
+    cursor: pointer;
+  }
+  
+  /* Input grows to fill remaining space */
+  .shortener-box .form-control {
+    flex-grow: 1;
+  }
+  
+
 .features {
     background-color: hsl(0, 2%, 90%);
 }
@@ -76,3 +112,12 @@ body {
     transform: translateX(-50%);
   }
 }
+
+  /* On desktop: make button shorter and inline with input */
+  @media (min-width: 768px) {
+    .shortener-btn {
+      width: auto;           /* shrink to content */
+      min-width: 150px;
+      max-width: 200px;
+    }
+  }
