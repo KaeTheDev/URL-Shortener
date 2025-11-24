@@ -1,0 +1,35 @@
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.features {
+    background-color: hsl(0, 2%, 90%);
+}
+
+.feature-box {
+    background-color: hsl(0, 0%, 100%);
+    width: 100%;
+    max-width: 350px;
+    min-height: 311px;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .feature-icon-circle {
+    width: 80px;
+    height: 80px;
+    background-color: hsl(257, 27%, 26%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -40px; /* move half circle above the box */
+    right: 50%; /* left align the icon images */
+    transform: translateX(-50%);
+  }
+  
+  .feature-icon-circle img {
+    width: 40px; /* icon size inside circle */
+    height: 40px;
+  }
