@@ -35,9 +35,7 @@ Users should be able to:
 
 
 ### Links
-
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [GitHub Pages Link](https://kaethedev.github.io/URL-Shortener/)
 
 ## My process
 
@@ -60,8 +58,10 @@ Fix the design to get it to match more with the specs.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Bootstrap Documentation](https://getbootstrap.com/docs/5.3/getting-started/introduction/) - This helped for when there were classes or behavior about Bootstap that I did not know.
+- [Cuttly Documentation](https://cutt.ly/api-documentation/regular-api) - This is how I learned to implement the Cuttly API
+- [Bit.ly](https://dev.bitly.com/api-reference/#createFullBitlink) - Bit.ly documentation for the API
+
 
 ## Author
 
