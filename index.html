@@ -24,26 +24,39 @@
       <a href="#" class="navbar-brand">
         <img src="images/logo.svg" alt="Shortly Logo">
       </a>
+      
       <button class="navbar-toggler" 
-      type="button" 
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarText" 
-      aria-controls="navbarText" 
-      aria-expanded="false" 
-      aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarText">
-      <div class="navbar-nav w-100 d-flex justify-content-center justify-content-lg-start text-center">
-        <a class="nav-link active" aria-current="page" href="#">Features</a>
-        <a class="nav-link active" href="#">Prices</a>
-        <a class="nav-link active" href="#">Resources</a>
+        type="button" 
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarText" 
+        aria-controls="navbarText" 
+        aria-expanded="false" 
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarText">
+        <div class="navbar-nav w-100 d-flex justify-content-center justify-content-lg-start text-center">
+          <a class="nav-link active" aria-current="page" href="#">Features</a>
+          <a class="nav-link active" href="#">Prices</a>
+          <a class="nav-link active" href="#">Resources</a>
+        </div>
+  
+        <!-- Mobile buttons centered -->
+        <div class="d-lg-none mt-3 w-100 d-flex flex-column align-items-center gap-2">
+          <button class="btn login-btn w-50" type="button">Login</button>
+          <button class="btn btn-outline-success fw-bold sign-in-btn w-50" type="button">Sign Up</button>
+        </div>
+      </div>
+  
+      <!-- Desktop buttons -->
+      <div class="d-none d-lg-flex gap-2">
+        <button class="btn login-btn" type="button">Login</button>
+        <button class="btn btn-outline-success fw-bold sign-in-btn" type="button">Sign Up</button>
       </div>
     </div>
-    <button class="btn d-none d-lg-block login-btn" type="button">Login</button>
-    <button class="btn btn-outline-success d-none d-lg-block sign-in-btn fw-bold" type="button">Sign Up</button>
   </nav>
+  
 <!--END OF NAVBAR-->
 
 <!--HERO SECTION-->
@@ -90,13 +103,14 @@
     </form>
   </div>
 </section>
+<!--END OF SHORTENER INPUT BOX-->
 
 <section class="link-results">
   <!-- Container for API results -->
   <div id="shortened-links"></div>
 </section>
 
-<!--END OF SHORTENER INPUT BOX-->
+
 </div> <!--END OF SITE DIV CONTAINER-FLUID-->
 
 <!--BEGINNING OF FEATURES SECTION: OUTSIDE THE TOP LEVEL DIV CONTAINER BECAUSE IT DOES NOT 
