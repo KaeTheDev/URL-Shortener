@@ -19,6 +19,7 @@
 <div class="container-fluid">
 
   <!--NAVBAR-->
+  <header>
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
       <a href="#" class="navbar-brand">
@@ -56,9 +57,10 @@
       </div>
     </div>
   </nav>
-  
+</header>
 <!--END OF NAVBAR-->
 
+<main>
 <!--HERO SECTION-->
 <section class="hero">
   <div class="container my-4">
@@ -86,8 +88,10 @@
 <section class="shortener py-5">
   <div class="container-fluid shortener-box py-5 px-3 px-md-5">
     <form class="d-flex flex-column flex-md-row gap-3 justify-content-center align-items-stretch">
+      <label for="longLinkInput" class="visually-hidden">Enter a URL to shorten</label>
       <!-- URL input -->
       <input 
+      id="longLinkInput"
         type="url" 
         class="form-control flex-grow-1 long-link-input" 
         placeholder="Shorten a link here..." 
@@ -179,7 +183,7 @@ NEED GUTTERS
   </div>
 </section>
 <!--END OF BOOST SECTION-->
-
+</main>
 <!--FOOTER SECTION-->
 <section class="footer py-5">
   <div class="container">
@@ -228,10 +232,10 @@ NEED GUTTERS
 
 <!-- Social Icons -->
 <div class="col-12 col-md-3 mt-4 mt-md-0 text-center text-md-end d-flex justify-content-center justify-content-md-end">
-  <img src="images/icon-facebook.svg" alt="Facebook" class="me-3 mb-3 mb-md-0">
-  <img src="images/icon-twitter.svg" alt="Twitter" class="me-3 mb-3 mb-md-0">
-  <img src="images/icon-pinterest.svg" alt="Pinterest" class="me-3 mb-3 mb-md-0">
-  <img src="images/icon-instagram.svg" alt="Instagram" class="mb-3 mb-md-0">
+  <img src="images/icon-facebook.svg" alt="Facebook" class="me-3 mb-3 mb-md-0" alt="Follow us on Facebook">
+  <img src="images/icon-twitter.svg" alt="Twitter" class="me-3 mb-3 mb-md-0" alt="Follow us on Twitter">
+  <img src="images/icon-pinterest.svg" alt="Pinterest" class="me-3 mb-3 mb-md-0" alt="Follow us on Pinterest">
+  <img src="images/icon-instagram.svg" alt="Instagram" class="mb-3 mb-md-0" alt="Follow us on Instagram">
 </div>
     </div>
   </div>

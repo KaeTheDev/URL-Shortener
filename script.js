@@ -1,5 +1,5 @@
 const form = document.querySelector(".shortener-box form");
-const longLinkInput = document.querySelector(".long-link-input");
+const longLinkInput = document.querySelector("#long-link-input");
 const shortenedLinksContainer = document.querySelector("#shortened-links");
 
 // MOCK API function for testing
@@ -39,7 +39,7 @@ form.addEventListener("submit", async (e) => {
     
     shortenedLinksContainer.appendChild(linkRow);
     
-    // Add copy functionality
+    // Copy functionality
     const copyBtn = linkRow.querySelector(".copy-btn");
     copyBtn.addEventListener("click", () => {
       navigator.clipboard.writeText(shortUrl);
