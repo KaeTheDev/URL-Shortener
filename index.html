@@ -1,248 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link
-  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-  rel="stylesheet"
-/>
-  <link rel="stylesheet" href="styles.css">
-  
-  <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
 
-</head>
-<body>
-
-<div class="container-fluid">
-
-  <!--NAVBAR-->
-  <header>
-  <nav class="navbar navbar-expand-lg">
+    <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
+  </head>
+  <body>
     <div class="container-fluid">
-      <a href="#" class="navbar-brand">
-        <img src="images/logo.svg" alt="Shortly Logo">
-      </a>
-      
-      <button class="navbar-toggler" 
-        type="button" 
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarText" 
-        aria-controls="navbarText" 
-        aria-expanded="false" 
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-  
-      <div class="collapse navbar-collapse" id="navbarText">
-        <div class="navbar-nav w-100 d-flex justify-content-center justify-content-lg-start text-center">
-          <a class="nav-link active" aria-current="page" href="#">Features</a>
-          <a class="nav-link active" href="#">Prices</a>
-          <a class="nav-link active" href="#">Resources</a>
-        </div>
-  
-        <!-- Mobile buttons centered -->
-        <div class="d-lg-none mt-3 w-100 d-flex flex-column align-items-center gap-2">
-          <button class="btn login-btn w-50" type="button">Login</button>
-          <button class="btn btn-outline-success fw-bold sign-in-btn w-50" type="button">Sign Up</button>
-        </div>
-      </div>
-  
-      <!-- Desktop buttons -->
-      <div class="d-none d-lg-flex gap-2">
-        <button class="btn login-btn" type="button">Login</button>
-        <button class="btn btn-outline-success fw-bold sign-in-btn" type="button">Sign Up</button>
-      </div>
+      <!-- ===== HEADER & NAV ===== -->
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-light" role="navigation">
+          <div class="container-fluid">
+            <a href="#" class="navbar-brand">
+              <img src="images/logo.svg" alt="Shortly Logo" />
+            </a>
+
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarText"
+              aria-controls="navbarText"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarText">
+              <div
+                class="navbar-nav w-100 d-flex justify-content-center justify-content-lg-start text-center"
+              >
+                <!-- Only use aria-current on the active page -->
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Features</a
+                >
+                <a class="nav-link" href="#">Prices</a>
+                <a class="nav-link" href="#">Resources</a>
+              </div>
+
+              <!-- Mobile buttons -->
+              <div
+                class="d-lg-none mt-3 w-100 d-flex flex-column align-items-center gap-2"
+              >
+                <button class="btn login-btn w-50" type="button">Login</button>
+                <button
+                  class="btn btn-outline-success fw-bold sign-in-btn w-50"
+                  type="button"
+                >
+                  Sign Up
+                </button>
+              </div>
+            </div>
+
+            <!-- Desktop buttons -->
+            <div class="d-none d-lg-flex gap-2">
+              <button class="btn login-btn" type="button">Login</button>
+              <button
+                class="btn btn-outline-success fw-bold sign-in-btn"
+                type="button"
+              >
+                Sign Up
+              </button>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <!-- ===== MAIN CONTENT ===== -->
+      <main>
+        <!-- HERO -->
+        <section class="hero">
+          <div class="container my-4">
+            <div class="row align-items-center">
+              <div
+                class="col-md-6 order-2 order-md-1 text-center text-md-start"
+              >
+                <h1 class="fw-bold mt-3">More than just shorter links</h1>
+                <p class="text-secondary">
+                  Build your brand’s recognition and get detailed insights on
+                  how your links are performing.
+                </p>
+                <button
+                  class="btn btn-outline-success get-started-btn fw-bold"
+                  type="button"
+                >
+                  Get Started
+                </button>
+              </div>
+              <div class="col-md-6 order-1 order-md-2">
+                <img
+                  src="images/illustration-working.svg"
+                  class="img-fluid"
+                  alt="Person working on computer illustration"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SHORTENER INPUT -->
+        <section class="shortener py-5">
+          <div class="container-fluid shortener-box py-5 px-3 px-md-5">
+            <form
+              class="d-flex flex-column flex-md-row gap-3 justify-content-center align-items-stretch"
+            >
+              <label for="longLinkInput" class="visually-hidden"
+                >Enter a URL to shorten</label
+              >
+              <input
+                id="longLinkInput"
+                type="url"
+                class="form-control flex-grow-1 long-link-input"
+                placeholder="Shorten a link here..."
+                required
+              />
+              <button
+                type="submit"
+                class="btn btn-primary shortener-btn w-100 w-md-auto"
+              >
+                Shorten It!
+              </button>
+            </form>
+          </div>
+        </section>
+
+        <!-- API RESULTS -->
+        <section class="link-results">
+          <div id="shortened-links" aria-live="polite"></div>
+        </section>
+      </main>
     </div>
-  </nav>
-</header>
-<!--END OF NAVBAR-->
+    <!-- END container-fluid -->
 
-<main>
-<!--HERO SECTION-->
-<section class="hero">
-  <div class="container my-4">
-    <div class="row align-items-center">
-      <div class="col-md-6 order-2 order-md-1 text-center text-md-start">
-        <h1 class="fw-bold mt-3">More than just shorter links</h1>
-        <p class="text-secondary">
-          Build your brand’s recognition and get detailed insights 
-          on how your links are performing.
-        </p>
-        <button class="btn btn-outline-success get-started-btn fw-bold" type="button">
-          Get Started
-        </button>
-      </div>
+    <!-- ===== FEATURES SECTION ===== -->
 
-      <div class="col-md-6 order-1 order-md-2">
-        <img src="images/illustration-working.svg" class="img-fluid" alt="Hero Illustration" />
-      </div>
-    </div>
-  </div>
-</section> 
-<!--END OF HERO SECTION-->
-
-<!--SHORTENER INPUT BOX-->
-<section class="shortener py-5">
-  <div class="container-fluid shortener-box py-5 px-3 px-md-5">
-    <form class="d-flex flex-column flex-md-row gap-3 justify-content-center align-items-stretch">
-      <label for="longLinkInput" class="visually-hidden">Enter a URL to shorten</label>
-      <!-- URL input -->
-      <input 
-      id="longLinkInput"
-        type="url" 
-        class="form-control flex-grow-1 long-link-input" 
-        placeholder="Shorten a link here..." 
-        required
-      >
-    
-      <button 
-        type="submit" 
-        class="btn btn-primary shortener-btn w-100 w-md-auto" 
-      >
-        Shorten It!
-      </button>
-    </form>
-  </div>
-</section>
-<!--END OF SHORTENER INPUT BOX-->
-
-<section class="link-results">
-  <!-- Container for API results -->
-  <div id="shortened-links"></div>
-</section>
-
-
-</div> <!--END OF SITE DIV CONTAINER-FLUID-->
-
-<!--BEGINNING OF FEATURES SECTION: OUTSIDE THE TOP LEVEL DIV CONTAINER BECAUSE IT DOES NOT 
+    <!--BEGINNING OF FEATURES SECTION: OUTSIDE THE TOP LEVEL DIV CONTAINER BECAUSE IT DOES NOT 
 NEED GUTTERS
 -->
-<section class="features py-5">
-  <div class="container text-center">
-    <h2>Advanced Statistics</h2>
-    <p>Track how your links are performing across the web with our 
-      advanced statistics dashboard.</p>
+    <section class="features py-5">
+      <div class="container text-center">
+        <h2>Advanced Statistics</h2>
+        <p>
+          Track how your links are performing across the web with our advanced
+          statistics dashboard.
+        </p>
 
-    <div class="row justify-content-center mt-5 position-relative">
-
-      <!-- Feature 1 -->
-      <div class="col-lg-4 col-md-6 mb-4 d-flex">
-        <div class="feature-box mx-auto position-relative">
-          <!-- Purple circle -->
-          <div class="feature-icon-circle position-absolute">
-            <img src="images/icon-brand-recognition.svg" alt="Brand Recognition">
-          </div>
-          <!-- Content -->
-          <div class="mt-5 pt-4 text-center">
-            <h3>Brand Recognition</h3>
-            <p>Boost your brand recognition with each click. Generic links don’t mean a thing. Branded links help instill confidence in your content.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Feature 2 -->
-      <div class="col-lg-4 col-md-6 mb-4 d-flex">
-        <div class="feature-box mx-auto position-relative mt-4 mt-lg-4">
-          <div class="feature-icon-circle position-absolute">
-            <img src="images/icon-detailed-records.svg" alt="Records">
-          </div>
-          <div class="mt-5 pt-4 text-center">
-            <h3>Detailed Records</h3>
-            <p>Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Feature 3 -->
-      <div class="col-lg-4 col-md-6 mb-4 d-flex">
-        <div class="feature-box mx-auto position-relative mt-4 mt-lg-5">
-          <div class="feature-icon-circle position-absolute">
-            <img src="images/icon-fully-customizable.svg" alt="Customizable">
-          </div>
-          <div class="mt-5 pt-4 text-center">
-            <h3>Fully Customizable</h3>
-            <p>Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-<!--END OF FEATURES SECTION-->
-
-<!--BOOST SECTION-->
-
-<section class="boost py-5 text-center">
-  <div class="container">
-    <h3 class="mb-4 text-white">Boost your links today</h3>
-    <button class="btn get-started-btn fw-bold">Get Started</button>
-  </div>
-</section>
-<!--END OF BOOST SECTION-->
-</main>
-<!--FOOTER SECTION-->
-<section class="footer py-5">
-  <div class="container">
-    <div class="row text-center text-md-start align-items-start">
-
-      <!-- Logo -->
-      <div class="col-12 col-md-3 mb-4 mb-md-0">
-        <img src="images/logo.svg" alt="Shortly Logo" class="footer-logo mb-4">
-      </div>
-
-      <!-- Links (3 columns) -->
-      <div class="col-12 col-md-6">
-        <div class="row">
-          <!-- Features -->
-          <div class="col-12 col-md-4 mb-4 mb-md-0">
-            <p class="fs-5 fw-bold text-light mb-4">Features</p>
-            <ul class="list-unstyled">
-              <li class="text-white mb-2">Link Shortening</li>
-              <li class="text-white mb-2">Branded Links</li>
-              <li class="text-white mb-2">Analytics</li>
-            </ul>
+        <div class="row justify-content-center mt-5 position-relative">
+          <!-- Feature 1 -->
+          <div class="col-lg-4 col-md-6 mb-4 d-flex">
+            <div class="feature-box mx-auto position-relative">
+              <!-- Purple circle -->
+              <div class="feature-icon-circle position-absolute">
+                <img
+                  src="images/icon-brand-recognition.svg"
+                  alt="Brand Recognition"
+                />
+              </div>
+              <!-- Content -->
+              <div class="mt-5 pt-4 text-center">
+                <h3>Brand Recognition</h3>
+                <p>
+                  Boost your brand recognition with each click. Generic links
+                  don’t mean a thing. Branded links help instill confidence in
+                  your content.
+                </p>
+              </div>
+            </div>
           </div>
 
-          <!-- Resources -->
-          <div class="col-12 col-md-4 mb-4 mb-md-0">
-            <p class="fs-5 fw-bold text-light mb-4">Resources</p>
-            <ul class="list-unstyled">
-              <li class="text-white mb-2">Blog</li>
-              <li class="text-white mb-2">Developers</li>
-              <li class="text-white mb-2">Support</li>
-            </ul>
+          <!-- Feature 2 -->
+          <div class="col-lg-4 col-md-6 mb-4 d-flex">
+            <div class="feature-box mx-auto position-relative mt-4 mt-lg-4">
+              <div class="feature-icon-circle position-absolute">
+                <img src="images/icon-detailed-records.svg" alt="Records" />
+              </div>
+              <div class="mt-5 pt-4 text-center">
+                <h3>Detailed Records</h3>
+                <p>
+                  Gain insights into who is clicking your links. Knowing when
+                  and where people engage with your content helps inform better
+                  decisions.
+                </p>
+              </div>
+            </div>
           </div>
 
-          <!-- Company -->
-          <div class="col-12 col-md-4 mb-4 mb-md-0">
-            <p class="fs-5 fw-bold text-light mb-4">Company</p>
-            <ul class="list-unstyled">
-              <li class="text-white mb-2">About</li>
-              <li class="text-white mb-2">Our Team</li>
-              <li class="text-white mb-2">Careers</li>
-              <li class="text-white mb-2">Contact</li>
-            </ul>
+          <!-- Feature 3 -->
+          <div class="col-lg-4 col-md-6 mb-4 d-flex">
+            <div class="feature-box mx-auto position-relative mt-4 mt-lg-5">
+              <div class="feature-icon-circle position-absolute">
+                <img
+                  src="images/icon-fully-customizable.svg"
+                  alt="Customizable"
+                />
+              </div>
+              <div class="mt-5 pt-4 text-center">
+                <h3>Fully Customizable</h3>
+                <p>
+                  Improve brand awareness and content discoverability through
+                  customizable links, supercharging audience engagement.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+    </section>
+    <!--END OF FEATURES SECTION-->
 
-<!-- Social Icons -->
-<div class="col-12 col-md-3 mt-4 mt-md-0 text-center text-md-end d-flex justify-content-center justify-content-md-end">
-  <img src="images/icon-facebook.svg" alt="Facebook" class="me-3 mb-3 mb-md-0" alt="Follow us on Facebook">
-  <img src="images/icon-twitter.svg" alt="Twitter" class="me-3 mb-3 mb-md-0" alt="Follow us on Twitter">
-  <img src="images/icon-pinterest.svg" alt="Pinterest" class="me-3 mb-3 mb-md-0" alt="Follow us on Pinterest">
-  <img src="images/icon-instagram.svg" alt="Instagram" class="mb-3 mb-md-0" alt="Follow us on Instagram">
-</div>
-    </div>
-  </div>
-</section>
-<!--END OF FOOTER SECTION-->
+    <!-- ===== BOOST SECTION ===== -->
+    <section class="boost py-5 text-center">
+      <div class="container">
+        <h3 class="mb-4 text-white">Boost your links today</h3>
+        <button class="btn get-started-btn fw-bold">Get Started</button>
+      </div>
+    </section>
 
-<script src="script.js" defer></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer py-5">
+      <div class="container">
+        <div class="row text-center text-md-start align-items-start">
+          <!-- Logo -->
+          <div class="col-12 col-md-3 mb-4 mb-md-0">
+            <img
+              src="images/logo.svg"
+              alt="Shortly Logo"
+              class="footer-logo mb-4"
+            />
+          </div>
+
+          <!-- Links (3 columns) -->
+          <div class="col-12 col-md-6">
+            <div class="row">
+              <!-- Features -->
+              <div class="col-12 col-md-4 mb-4 mb-md-0">
+                <p class="fs-5 fw-bold text-light mb-4">Features</p>
+                <ul class="list-unstyled">
+                  <li class="text-white mb-2">Link Shortening</li>
+                  <li class="text-white mb-2">Branded Links</li>
+                  <li class="text-white mb-2">Analytics</li>
+                </ul>
+              </div>
+
+              <!-- Resources -->
+              <div class="col-12 col-md-4 mb-4 mb-md-0">
+                <p class="fs-5 fw-bold text-light mb-4">Resources</p>
+                <ul class="list-unstyled">
+                  <li class="text-white mb-2">Blog</li>
+                  <li class="text-white mb-2">Developers</li>
+                  <li class="text-white mb-2">Support</li>
+                </ul>
+              </div>
+
+              <!-- Company -->
+              <div class="col-12 col-md-4 mb-4 mb-md-0">
+                <p class="fs-5 fw-bold text-light mb-4">Company</p>
+                <ul class="list-unstyled">
+                  <li class="text-white mb-2">About</li>
+                  <li class="text-white mb-2">Our Team</li>
+                  <li class="text-white mb-2">Careers</li>
+                  <li class="text-white mb-2">Contact</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Icons -->
+          <div
+            class="col-12 col-md-3 mt-4 mt-md-0 text-center text-md-end d-flex justify-content-center justify-content-md-end"
+          >
+            <img
+              src="images/icon-facebook.svg"
+              alt="Facebook – opens Facebook page"
+              class="me-3 mb-3 mb-md-0"
+            />
+            <img
+              src="images/icon-twitter.svg"
+              alt="Twitter – opens Twitter page"
+              class="me-3 mb-3 mb-md-0"
+            />
+            <img
+              src="images/icon-pinterest.svg"
+              alt="Pinterest – opens Pinterest page"
+              class="me-3 mb-3 mb-md-0"
+            />
+            <img
+              src="images/icon-instagram.svg"
+              alt="Instagram – opens Instagram profile"
+              class="mb-3 mb-md-0"
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
