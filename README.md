@@ -41,6 +41,8 @@ Users should be able to:
 
 ## My process
 
+I started with Bootstrap and building the full layout first. That left me with enough time to focus on the API integration, semantics and accessibility. 
+
 ### Built with
 
 - Bootstrap
@@ -48,14 +50,13 @@ Users should be able to:
 - Flexbox
 - Mobile-first workflow
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
-
 ### What I learned
 
+I learned how to mix JavaScript with Bootstrap. The last time I attempted it, it didn't work out so well. But I think because I have a better understanding of the DOM I can see that mixing JavaScript with Bootstrap is no different that mixing it with plain HTML. 
 
 ### Continued development
 
-
+Fix the design to get it to match more with the specs.
 
 ### Useful resources
 
@@ -64,12 +65,9 @@ Users should be able to:
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [Starving Artist Design & Development](https://www.starvingartistddllc.com)
+- Frontend Mentor - [@kaethedev](https://www.frontendmentor.io/profile/kaethedev)
+- Twitter - [@kaethedev](https://www.twitter.com/kaethedev)
 
-
-
-## Acknowledgments
 
 ## Reflection
