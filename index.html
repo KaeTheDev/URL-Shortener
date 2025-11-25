@@ -76,7 +76,7 @@
       <!-- URL input -->
       <input 
         type="url" 
-        class="form-control flex-grow-1" 
+        class="form-control flex-grow-1 long-link-input" 
         placeholder="Shorten a link here..." 
         required
       >
@@ -88,10 +88,12 @@
         Shorten It!
       </button>
     </form>
-
-       <!-- Container for API results -->
-       <div id="shortened-links" class="mt-4"></div>
   </div>
+</section>
+
+<section class="link-results">
+  <!-- Container for API results -->
+  <div id="shortened-links"></div>
 </section>
 
 <!--END OF SHORTENER INPUT BOX-->
@@ -222,7 +224,7 @@ NEED GUTTERS
 </section>
 <!--END OF FOOTER SECTION-->
 
-<script src="script.js"></script>
+<script src="script.js" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

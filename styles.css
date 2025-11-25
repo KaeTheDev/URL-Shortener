@@ -105,6 +105,32 @@ body {
     filter: brightness(0) invert(1);
   }
 
+  /* Link results styling */
+.link-results {
+  background-color: hsl(0, 2%, 90%);
+  padding: 0 1rem 2rem 1rem;
+}
+
+#shortened-links .row {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.copy-btn:hover {
+  opacity: 0.8;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 767px) {
+  #shortened-links .row {
+      text-align: center;
+  }
+  
+  #shortened-links a {
+      display: block;
+      margin: 8px 0;
+  }
+}
+
   /* MEDIA QUERIES FOR MOBILE */
 @media (max-width: 991px) {
   .feature-icon-circle {
