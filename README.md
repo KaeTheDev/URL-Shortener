@@ -31,8 +31,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.png)
-
+![](./Screenshot.png)
 
 ### Links
 - Live Site URL: [GitHub Pages Link](https://kaethedev.github.io/URL-Shortener/)
