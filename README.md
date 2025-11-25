@@ -70,3 +70,9 @@ Fix the design to get it to match more with the specs.
 
 
 ## Reflection
+
+For this project, I chose to use Bootstrap to establish the layout and responsive styling quickly and efficiently. My goal was to complete the visual and structural foundation early so I could dedicate more time to implementing semantic HTML, accessibility best practices, and integrating the API with proper error handling. This strategy worked well and allowed me to manage my time effectively.
+
+The main challenge I encountered was with the Bit.ly API limitations, which only permit three requests per month. I was unsure whether this restriction applied to duplicate links or unique submissions, but I knew I needed a reliable way to test my JavaScript functionality within the Bootstrap framework. Previously, I struggled when combining JavaScript with Bootstrap, so I approached this cautiously. To test the dynamic rendering of shortened links, I simulated API behavior using a setTimeout function, which allowed me to verify the UI logic without exhausting API requests.
+
+Although I was unable to fully replicate design elements—such as the connecting lines between feature boxes and perfectly centering the input form within both the hero and feature sections—the final result still clearly reflects my intentions. With more time, I would refine the custom CSS to override Bootstrap where necessary and align the design more closely with the original mockup. Overall, I’m proud of the project, especially the successful integration of JavaScript alongside Bootstrap.
